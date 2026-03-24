@@ -1,0 +1,29 @@
+Sub AjustarPagina()
+
+    With ActiveSheet
+    
+	.Columns("A").ColumnWidth = 6
+	.Columns("B").ColumnWidth = 44
+        .Columns("G").ColumnWidth = 16
+        .Columns("H").ColumnWidth = 12
+        
+        .Range("F13:H36").HorizontalAlignment = xlRight
+        
+        With .PageSetup
+            .Orientation = xlPortrait
+            .PaperSize = xlPaperA4
+            .Zoom = False
+            .FitToPagesWide = 1
+            .FitToPagesTall = 1
+            .CenterHorizontally = True
+            .CenterVertically = False
+            .LeftMargin = Application.InchesToPoints(0.2)
+            .RightMargin = Application.InchesToPoints(0.2)
+            .TopMargin = Application.InchesToPoints(0.3)
+            .BottomMargin = Application.InchesToPoints(0.3)
+            .PrintArea = "$A$1:$H$39"
+        End With
+        
+    End With
+
+End Sub

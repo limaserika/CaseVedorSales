@@ -1,0 +1,6 @@
+{
+  "Name": "CaseRelatorioVendas",
+  "ProjectType": "Process",
+  "Description": "Esse projeto tem como objetivo erar um relátorio de vendas para seus vendedores.",
+  "MainFile": "Main.xaml"
+}
